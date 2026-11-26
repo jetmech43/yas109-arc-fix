@@ -1,0 +1,16 @@
+# NEVER commit Yamaha firmware or key material to this repo.
+*.enc
+*.bin
+*.out
+*.img
+*.ubi
+*.zip
+mcu_ver
+yamaha_ver.txt
+tmp_dec*
+tmp_key*
+# decrypted / extracted trees
+extracted/
+update_unzip/
+rootfs*/
+dump-*/

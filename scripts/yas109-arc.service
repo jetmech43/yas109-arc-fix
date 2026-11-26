@@ -1,0 +1,10 @@
+[Unit]
+Description=YAS-109 ARC re-init on resume
+RequiresMountsFor=/data
+[Service]
+Type=simple
+ExecStart=/data/yas109-arc-watch.sh
+Restart=on-failure
+RestartSec=10
+[Install]
+WantedBy=basic.target
